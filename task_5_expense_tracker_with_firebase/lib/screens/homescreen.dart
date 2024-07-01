@@ -30,6 +30,7 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // automaticallyImplyLeading: false,
         backgroundColor: Colors.blueAccent,
         elevation: 1,
         title: Text('Expense Tracker'),

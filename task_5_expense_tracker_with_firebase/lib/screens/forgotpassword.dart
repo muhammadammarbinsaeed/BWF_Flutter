@@ -19,6 +19,8 @@ class _forgotpasswordscreenstate extends State<forgotpasswordscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: true,
+          elevation: 1,
           title: const Text(' Forgot Password '),
           centerTitle: true,
           // actions: [
@@ -73,7 +75,7 @@ class _forgotpasswordscreenstate extends State<forgotpasswordscreen> {
                         await  FirebaseAuth.instance.sendPasswordResetEmail(email: forgotuseremail)
                         .then((value) => {
                           Get.snackbar('Sent!', 'Email Sent to your Gmail account'),
-                          Get.off(()=>LoginScreen())
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginScreen()))
                         });
                        } on FirebaseAuthException catch (e) {
                          print("Error $e");

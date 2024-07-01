@@ -22,7 +22,7 @@ await FirebaseFirestore.instance.collection('Users').doc(currentuser!.uid).set({
 }).then((value)=>{
      
      FirebaseAuth.instance.signOut(),
-      Get.to(()=>LoginScreen())
+      Get.offAll(()=>LoginScreen())
 
 });
 
