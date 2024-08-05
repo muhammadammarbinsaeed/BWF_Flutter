@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311197704558",
+    "project_id": "e-commerceapp-6d3cd",
+    "storage_bucket": "e-commerceapp-6d3cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311197704558:android:72588343381f0327d9a17f",
+        "android_client_info": {
+          "package_name": "com.example.task_6_e_commerce_gharmall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLztCrijfFLcjhSU-eIyxe7EJL6Jjfy7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
